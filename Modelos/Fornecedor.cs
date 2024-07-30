@@ -1,21 +1,20 @@
-namespace Modelos 
-{
+namespace Modelos;
 public class Fornecedor
 {
-    int id;
+    int Id;
     string CNPJ;
     string Cidade;
     string MateriaPrima;
-    } 
-    public void  SetId ( int Id)
+    
+    public void  SetId( int Id)
     { 
-     this.id = Id;
+     this.Id = Id;
     }
     public int GetId()
     {
-        return id; 
+        return Id; 
     }
-    private void SetCNPJ ( string CNPJ)
+    private void SetCNPJ( string CNPJ)
      {
     
      this.CNPJ = CNPJ;
@@ -23,9 +22,9 @@ public class Fornecedor
      }
      private string GetCNPJ ()
      {
-        return CNP;
+        return CNPJ;
      }
-    public void SetCidade ( string Cidade )
+    public void SetCidade( string Cidade )
      {
      this.Cidade = Cidade;
      }

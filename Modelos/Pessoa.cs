@@ -1,13 +1,14 @@
-namespace Modelos
-{
+namespace Modelos;
+
 public class Pessoa
+{
 string nome;
 string cpf; 
 string telefone;
 string email;
 public void SetNome (string nome)
 {
-    this.nome = Nome;
+    this.nome = nome;
 }
 public string GetNome ()
 {
@@ -15,11 +16,11 @@ public string GetNome ()
 }
 public void SetCpf (string Cpf)
 {
-    this.Cpf = Cpf;
+    this.cpf = Cpf;
 } 
 public string GetCpf ()
 {
-    return Cpf;
+    return cpf;
 } 
 public void Settelefone (string telefone)
 {
@@ -31,7 +32,7 @@ public string Gettelefone ()
 }
 public void Setemail (string email)
 {
-    this.email =email
+    this.email = email;
 }
 public string Getemail ()
 {

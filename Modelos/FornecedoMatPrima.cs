@@ -3,20 +3,20 @@ namespace Modelos;
 public class Fornecedor_MateriaPrima
 {
 int Id_fORNECEDOR;
-int Id-MateriaPrima
-public void SetId_fornecedor (string id)
+int Id_MateriaPrima;
+public void SetId_fornecedor (int id)
 {
     this.Id_fORNECEDOR =Id_fORNECEDOR;
 }
-public string GetId_fORNECEDOR()
+public int GetId_fORNECEDOR()
 {
     return Id_fORNECEDOR;
 }
-public void SetId_MateriaPrima (string MateriaPrima)
+public void SetId_MateriaPrima (int idMateriaPrima)
 {
-    this.Id_MateriaPrima = Id_MateriaPrima; 
+    this.Id_MateriaPrima = idMateriaPrima; 
 }
-public string GetId_MateriaPrima ()
+public int GetId_MateriaPrima ()
 {
     return Id_MateriaPrima;
 }

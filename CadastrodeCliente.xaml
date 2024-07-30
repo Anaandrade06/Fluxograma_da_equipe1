@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fluxograma_da_equipe1.CadastroCliente"
-             BackgroundColor="LightPurple">
+             BackgroundColor="#000000">
 
     <ScrollView>
         <StackLayout Padding="20">
@@ -39,7 +39,7 @@
                     <ImageButton Source="delete_icon.png" WidthRequest="30" HeightRequest="30"/>
                 </StackLayout>
             </StackLayout>
-
+            
             <Button Text="+" HorizontalOptions="Center" Margin="0,20,0,20" Clicked="OnAddFieldClicked"/>
 
             <Grid>
