@@ -1,23 +1,12 @@
+using LiteDB;
+
 namespace Modelos;
 
-public class Fornecedor_MateriaPrima
+public class Fornecedor_MateriaPrima : Registro
 {
-int Id_fORNECEDOR;
-int Id_MateriaPrima;
-public void SetId_fornecedor (int id)
-{
-    this.Id_fORNECEDOR =Id_fORNECEDOR;
-}
-public int GetId_fORNECEDOR()
-{
-    return Id_fORNECEDOR;
-}
-public void SetId_MateriaPrima (int idMateriaPrima)
-{
-    this.Id_MateriaPrima = idMateriaPrima; 
-}
-public int GetId_MateriaPrima ()
-{
-    return Id_MateriaPrima;
-}
+[BsonId]
+public int Id_fornecedor {get; set;}
+
+public int Id_MateriaPrima {get; set;}
+
 }

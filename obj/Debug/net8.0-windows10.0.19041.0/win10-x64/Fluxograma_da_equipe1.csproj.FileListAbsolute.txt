@@ -396,3 +396,15 @@ C:\Users\Aluno\Desktop\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.
 C:\Users\Aluno\Desktop\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\Aluno\Desktop\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Aluno\Desktop\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Fluxograma_da_equipe1.csproj.AssemblyReference.cache
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Aluno\Fluxograma_da_equipe1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Fluxograma_da_equipe1.GeneratedMSBuildEditorConfig.editorconfig

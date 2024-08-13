@@ -1,37 +1,12 @@
 using System.Runtime.CompilerServices;
+using LiteDB;
 
 namespace Modelos;
 
-public class Materia_Prima
+public class Materia_Prima :Registro
 {
-string nome; 
-int quantidade; 
-int Id_MateriaPrima;
-public void SetNome (string Nome)
-{
-this.nome = Nome;
-}
-public string GetNome()
-{ 
-    return nome;
-}
-public void SetQuantidade (int quantidade)
-{
-this.quantidade = quantidade;
-}
-public int GetQuantidade()
-{
-    return quantidade;
-}
-public void  SetId_MateriaPrima (int Id_MateriaPrima)
-{
-    this.Id_MateriaPrima =Id_MateriaPrima;
-}
-public int GetId_MateriaPrima()
-{
-    return Id_MateriaPrima;
-}
-
-
-
+public string Nome { get; set;}
+public int Quantidade {get; set;}
+[BsonId]
+public int Id_MateriaPrima {get; set;}
 }
