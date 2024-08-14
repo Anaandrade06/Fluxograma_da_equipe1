@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fluxograma_da_equipe1.Fornecedor"
+             Title="Fornecedor">
+    <ContentPage.Content>
+        <Grid Padding="20">
+            <Frame BackgroundColor="LightSkyBlue" CornerRadius="20">
+                <StackLayout Padding="20">
+                    <Label Text="FORNECEDOR" 
+                           FontSize="Medium" 
+                           HorizontalOptions="Center" 
+                           FontAttributes="Bold"/>
+
+                    <Grid Margin="20,20,20,0" RowSpacing="10" ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Entry Grid.Row="0" Grid.Column="0" Placeholder="" />
+                        <Button Grid.Row="0" Grid.Column="1" Text="🔍" 
+                                Clicked="OnProcurarClicked" 
+                                BackgroundColor="White"/>
+
+                        <!-- Repeat similar rows for other entries -->
+                        <Entry Grid.Row="1" Grid.Column="0" Placeholder="" />
+                        <Entry Grid.Row="1" Grid.Column="1" WidthRequest="50" Placeholder="" />
+
+                        <Entry Grid.Row="2" Grid.Column="0" Placeholder="" />
+                        <Entry Grid.Row="2" Grid.Column="1" WidthRequest="50" Placeholder="" />
+
+                        <Entry Grid.Row="3" Grid.Column="0" Placeholder="" />
+                        <Entry Grid.Row="3" Grid.Column="1" WidthRequest="50" Placeholder="" />
+
+                        <Entry Grid.Row="4" Grid.Column="0" Placeholder="" />
+                        <Entry Grid.Row="4" Grid.Column="1" WidthRequest="50" Placeholder="" />
+
+                        <Entry Grid.Row="5" Grid.Column="0" Placeholder="" />
+                        <Entry Grid.Row="5" Grid.Column="1" WidthRequest="50" Placeholder="" />
+
+                        <Button Grid.Row="6" Grid.Column="1" Text="+" 
+                                BackgroundColor="White" 
+                                Clicked="OnAddClicked" />
+                    </Grid>
+
+                    <Grid Margin="0,30,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Button Text="PROCURAR" 
+                                    BackgroundColor="DodgerBlue" 
+                                    TextColor="White"
+                                    Clicked="OnProcurarClicked"/>
+                            <Label Text="DESEJA PROCURAR ISSO ?" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button Text="SIM" 
+                                        BackgroundColor="LightGreen" 
+                                        TextColor="White" 
+                                        Grid.Column="0"/>
+                                <Button Text="NÃO" 
+                                        BackgroundColor="Red" 
+                                        TextColor="White" 
+                                        Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" HorizontalOptions="Center">
+                            <Button Text="APAGAR" 
+                                    BackgroundColor="DodgerBlue" 
+                                    TextColor="White"
+                                    Clicked="OnApagarClicked"/>
+                            <Label Text="DESEJA APAGAR ISSO ?" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button Text="SIM" 
+                                        BackgroundColor="LightGreen" 
+                                        TextColor="White" 
+                                        Grid.Column="0"/>
+                                <Button Text="NÃO" 
+                                        BackgroundColor="Red" 
+                                        TextColor="White" 
+                                        Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

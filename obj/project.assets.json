@@ -33777,11 +33777,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Fluxograma_da_equipe1\\Fluxograma_da_equipe1.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\Fluxograma_da_equipe1\\Fluxograma_da_equipe1.csproj",
       "projectName": "Fluxograma_da_equipe1",
-      "projectPath": "C:\\Users\\Aluno\\Fluxograma_da_equipe1\\Fluxograma_da_equipe1.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\Fluxograma_da_equipe1\\Fluxograma_da_equipe1.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Fluxograma_da_equipe1\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\Fluxograma_da_equipe1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

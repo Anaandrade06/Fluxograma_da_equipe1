@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fluxograma_da_equipe1.CadastroFornecedor"
+             Title="Cadastro de Fornecedor">
+    <ContentPage.Content>
+        <Grid Padding="20">
+            <Frame BackgroundColor="LightSkyBlue" CornerRadius="20">
+                <StackLayout Padding="20">
+                    <Label Text="CADASTRO DE FORNECEDOR" 
+                           FontSize="Medium" 
+                           HorizontalOptions="Center" 
+                           FontAttributes="Bold"/>
+
+                    <StackLayout Spacing="10" Margin="0,20,0,0">
+                        <Label Text="NOME:" FontAttributes="Bold"/>
+                        <Entry x:Name="NomeEntry"/>
+
+                        <Label Text="TELEFONE:" FontAttributes="Bold"/>
+                        <Entry x:Name="TelefoneEntry"/>
+
+                        <Label Text="CNPJ:" FontAttributes="Bold"/>
+                        <Entry x:Name="CnpjEntry"/>
+
+                        <Label Text="CIDADE:" FontAttributes="Bold"/>
+                        <Entry x:Name="CidadeEntry"/>
+                    </StackLayout>
+
+                    <Grid Margin="0,30,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                            <Button Text="SALVAR" 
+                                    BackgroundColor="DodgerBlue" 
+                                    TextColor="White"
+                                    Clicked="OnSalvarClicked"/>
+                            <Label Text="DESEJA SALVAR ISSO ?" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button Text="SIM" 
+                                        BackgroundColor="LightGreen" 
+                                        TextColor="White" 
+                                        Grid.Column="0"/>
+                                <Button Text="NÃO" 
+                                        BackgroundColor="Red" 
+                                        TextColor="White" 
+                                        Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" HorizontalOptions="Center">
+                            <Button Text="EXCLUIR" 
+                                    BackgroundColor="DodgerBlue" 
+                                    TextColor="White"
+                                    Clicked="OnExcluirClicked"/>
+                            <Label Text="DESEJA APAGAR ISSO ?" 
+                                   FontAttributes="Bold" 
+                                   HorizontalOptions="Center"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button Text="SIM" 
+                                        BackgroundColor="LightGreen" 
+                                        TextColor="White" 
+                                        Grid.Column="0"/>
+                                <Button Text="NÃO" 
+                                        BackgroundColor="Red" 
+                                        TextColor="White" 
+                                        Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
