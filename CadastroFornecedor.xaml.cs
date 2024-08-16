@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace Fluxograma_da_equipe1
 {
-    public partial class CadastroFornecedorPage : ContentPage
+    public partial class CadastroFornecedor : ContentPage
     {
-        public CadastroFornecedorPage()
+        public CadastroFornecedor()
         {
             InitializeComponent();
         }
