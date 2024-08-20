@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YourNamespace.MainPage"
+             x:Class="Fluxograma_da_equipe1.FornecedorPage"
              BackgroundColor="#ADD8E6">
 
     <ScrollView>

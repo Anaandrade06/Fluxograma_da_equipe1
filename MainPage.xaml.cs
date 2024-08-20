@@ -1,24 +1,46 @@
-﻿namespace Fluxograma_da_equipe1;
+﻿using Microsoft.Maui.Controls;
 
-public partial class MainPage : ContentPage
+namespace Fluxograma_da_equipe1
 {
-	int count = 0;
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+        // Event handlers for each button
+        private async void OnClienteClicked(object sender, EventArgs e)
+        {
+			Application.Current.MainPage= new ClientePage();
+            // Navegação ou ação ao clicar em "Cliente"
+            await DisplayAlert("Cliente", "Você clicou em Cliente", "OK");
+            // Navegar para a página de Cliente, se necessário
+            // await Navigation.PushAsync(new ClientePage());
+        }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+        private async void OnFornecedorClicked(object sender, EventArgs e)
+        {
+            // Navegação ou ação ao clicar em "Fornecedor"
+            await DisplayAlert("Fornecedor", "Você clicou em Fornecedor", "OK");
+            // Navegar para a página de Fornecedor, se necessário
+            // await Navigation.PushAsync(new FornecedorPage());
+        }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        private async void OnProdutoClicked(object sender, EventArgs e)
+        {
+            // Navegação ou ação ao clicar em "Produto"
+            await DisplayAlert("Produto", "Você clicou em Produto", "OK");
+            // Navegar para a página de Produto, se necessário
+            // await Navigation.PushAsync(new ProdutoPage());
+        }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        private async void OnEstoqueClicked(object sender, EventArgs e)
+        {
+            // Navegação ou ação ao clicar em "Estoque"
+            await DisplayAlert("Estoque", "Você clicou em Estoque", "OK");
+            // Navegar para a página de Estoque, se necessário
+            // await Navigation.PushAsync(new EstoquePage());
+        }
+    }
 }
-
