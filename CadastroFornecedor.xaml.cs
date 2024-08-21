@@ -15,7 +15,8 @@ namespace Fluxograma_da_equipe1
             if (salvar)
             {
                 // Lógica para salvar os dados
-                await DisplayAlert("Sucesso", "Dados salvos com sucesso!", "OK");
+                await DisplayAlert("Sucesso", "Dados salvos com sucesso!", "OK");  
+                Application.Current.MainPage= new FornecedorPage();
             }
         }
 

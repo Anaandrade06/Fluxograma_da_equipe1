@@ -54,27 +54,6 @@
                                     BackgroundColor="DodgerBlue" 
                                     TextColor="White"
                                     Clicked="OnSalvarClicked"/>
-                           
-                            <Label Text="DESEJA SALVAR ISSO ?" 
-                                   FontAttributes="Bold" 
-                                   HorizontalOptions="Center"/>
-                            
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                               
-                                <Button Text="SIM" 
-                                        BackgroundColor="LightGreen" 
-                                        TextColor="White" 
-                                        Grid.Column="0"/>
-                                
-                                <Button Text="NÃO" 
-                                        BackgroundColor="Red" 
-                                        TextColor="White" 
-                                        Grid.Column="1"/>
-                            </Grid>
                         </StackLayout>
 
                         <StackLayout Grid.Column="1" 
@@ -84,26 +63,6 @@
                                     BackgroundColor="DodgerBlue" 
                                     TextColor="White"
                                     Clicked="OnExcluirClicked"/>
-                            
-                            <Label Text="DESEJA APAGAR ISSO ?" 
-                                   FontAttributes="Bold" 
-                                   HorizontalOptions="Center"/>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                
-                                <Button Text="SIM" 
-                                        BackgroundColor="LightGreen" 
-                                        TextColor="White" 
-                                        Grid.Column="0"/>
-                               
-                                <Button Text="NÃO" 
-                                        BackgroundColor="Red" 
-                                        TextColor="White" 
-                                        Grid.Column="1"/>
-                            </Grid>
                         </StackLayout>
                     </Grid>
                 </StackLayout>

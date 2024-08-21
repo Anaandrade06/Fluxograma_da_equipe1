@@ -21,6 +21,7 @@ namespace Fluxograma_da_equipe1
 
         private async void OnFornecedorClicked(object sender, EventArgs e)
         {
+            Application.Current.MainPage= new FornecedorPage();
             // Navegação ou ação ao clicar em "Fornecedor"
             await DisplayAlert("Fornecedor", "Você clicou em Fornecedor", "OK");
             // Navegar para a página de Fornecedor, se necessário

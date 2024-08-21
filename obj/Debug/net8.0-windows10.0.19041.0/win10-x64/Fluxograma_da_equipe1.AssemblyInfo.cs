@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fluxograma_da_equipe1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+00922d36159955c9cd94006e6a49a7546b855bd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b31f41bcf06185ec99f0d96db5137a27ad54a07b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fluxograma_da_equipe1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fluxograma_da_equipe1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

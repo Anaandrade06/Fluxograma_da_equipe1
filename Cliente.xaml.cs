@@ -8,9 +8,13 @@ namespace Fluxograma_da_equipe1
         {
             InitializeComponent();
         }
-        private void CadastrarClienteClicked (object sender, EventArgs e)
+        private void VoltarClienteClicked (object sender, EventArgs e)
         {
-          
+          Application.Current.MainPage= new MainPage();
+        }
+         private void CadastrarClienteClicked (object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new CadastroClientePage();
         }
         // Aqui você pode adicionar event handlers e outras lógicas
     }

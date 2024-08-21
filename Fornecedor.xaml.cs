@@ -8,6 +8,10 @@ namespace Fluxograma_da_equipe1
         {
             InitializeComponent();
         }
+          private void CadastrarFornecedorClicked (object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new CadastroFornecedor();
+        }
 
         // Aqui você pode adicionar event handlers e outras lógicas
     }
