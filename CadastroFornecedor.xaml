@@ -6,7 +6,7 @@
         <Grid Padding="20">
             
             <Frame 
-            BackgroundColor="LightSkyBlue" 
+            BackgroundColor="#f5f5f5" 
             CornerRadius="20">
 
                 <StackLayout Padding="20">

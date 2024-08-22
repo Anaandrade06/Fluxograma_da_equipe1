@@ -27,7 +27,8 @@ namespace Fluxograma_da_equipe1
             {
                 // Lógica para excluir os dados
                 await DisplayAlert("Sucesso", "Dados excluídos com sucesso!", "OK");
+                Application.Current.MainPage= new FornecedorPage();
+            }
             }
         }
     }
-}

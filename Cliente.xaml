@@ -40,7 +40,7 @@
 
             <!-- Botão de Cadastro -->
             <Button Text="CADASTRAR CLIENTE"
-                    BackgroundColor="#B3FFB3"
+                    BackgroundColor="DodgerBlue"
                     HorizontalOptions="FillAndExpand"
                     Clicked="CadastrarClienteClicked"
                     Margin="0,20,0,0"
@@ -49,7 +49,7 @@
                     TextColor="Black"/>
 
                    <Button Text="Voltar"
-                    BackgroundColor="#B3FFB3"
+                    BackgroundColor="DodgerBlue"
                     HorizontalOptions="FillAndExpand"
                     Clicked="VoltarClienteClicked"
                     Margin="0,20,0,0"
