@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fluxograma_da_equipe1.ProdutoPage"
+             BackgroundColor="#f5f5f5">
+
+    <StackLayout Padding="30" VerticalOptions="CenterAndExpand">
+
+        <!-- Título -->
+        <Label Text="Produto"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               Margin="0,0,0,20"/>
+
+        <!-- Barra de busca -->
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Pesquisar"
+                   HorizontalOptions="FillAndExpand"
+                   BackgroundColor="White"/>
+            <Button Text="🔍"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    WidthRequest="50"
+                    Clicked="OnSearchClicked"/>
+        </StackLayout>
+
+        <!-- Lista de produtos -->
+        <Frame BackgroundColor="White"
+               CornerRadius="20"
+               Padding="10"
+               HeightRequest="200"
+               VerticalOptions="CenterAndExpand">
+            <ScrollView>
+                <StackLayout>
+                    <!-- Simulando uma lista de produtos -->
+                    <Label Text="Produto 1" Margin="0,5" />
+                    <Label Text="Produto 2" Margin="0,5" />
+                    <Label Text="Produto 3" Margin="0,5" />
+                    <Label Text="Produto 4" Margin="0,5" />
+                    <Label Text="Produto 5" Margin="0,5" />
+                    <Label Text="Produto 6" Margin="0,5" />
+                    <Label Text="Produto 7" Margin="0,5" />
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+
+        <!-- Botões de Salvar e Apagar -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20">
+            <Button Text="CADASTRAR"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    Clicked="OnSaveClicked"
+                    WidthRequest="100"
+                    Margin="0,0,10,0"/>
+            <Button Text="APAGAR"
+                    BackgroundColor="LightCoral"
+                    TextColor="Black"
+                    Clicked="OnDeleteClicked"
+                    WidthRequest="100"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

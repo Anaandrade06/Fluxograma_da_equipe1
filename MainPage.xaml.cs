@@ -30,6 +30,7 @@ namespace Fluxograma_da_equipe1
 
         private async void OnProdutoClicked(object sender, EventArgs e)
         {
+             Application.Current.MainPage= new ProdutoPage();
             // Navegação ou ação ao clicar em "Produto"
             await DisplayAlert("Produto", "Você clicou em Produto", "OK");
             // Navegar para a página de Produto, se necessário
