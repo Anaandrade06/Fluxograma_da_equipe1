@@ -18,10 +18,10 @@ namespace Fluxograma_da_equipe1
         }
 
         // Event handler for delete button
-        private void OnVoltarClicked(object sender, EventArgs e)
+        private void OnApagarClicked(object sender, EventArgs e)
         {
             // Implementar lógica de apagar
-            DisplayAlert("voltar", "Produto apagado com sucesso", "OK");
+            DisplayAlert("Apagado", "Produto apagado com sucesso", "OK");
              Application.Current.MainPage= new ProdutoPage();
         }
     }

@@ -22,10 +22,9 @@ namespace Fluxograma_da_equipe1
             Application.Current.MainPage= new CadastroProdutoPage();
         }
         // Event handler for delete button
-        private void OnDeleteClicked(object sender, EventArgs e)
+        private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Implementar lógica de apagar
-            DisplayAlert("Apagar", "Produto apagado com sucesso", "OK");
+            Application.Current.MainPage= new MainPage();
+        } 
         }
     }
-}

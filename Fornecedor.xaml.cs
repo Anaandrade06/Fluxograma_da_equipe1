@@ -12,7 +12,10 @@ namespace Fluxograma_da_equipe1
         {
           Application.Current.MainPage= new CadastroFornecedor();
         }
-
+          private void VoltarClicked (object sender, EventArgs e)
+        {
+          Application.Current.MainPage= new MainPage();
+        }
         // Aqui você pode adicionar event handlers e outras lógicas
     }
 } 

@@ -39,10 +39,17 @@ namespace Fluxograma_da_equipe1
 
         private async void OnEstoqueClicked(object sender, EventArgs e)
         {
+             Application.Current.MainPage= new EstoquePage();
             // Navegação ou ação ao clicar em "Estoque"
             await DisplayAlert("Estoque", "Você clicou em Estoque", "OK");
             // Navegar para a página de Estoque, se necessário
             // await Navigation.PushAsync(new EstoquePage());
+        }
+
+         private async void OnProduçãoClicked(object sender, EventArgs e)
+        {
+        Application.Current.MainPage= new MateriaPrimaPage();
+
         }
     }
 }

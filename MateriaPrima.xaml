@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Fluxograma_da_equipe1.CadastroProdutoPage"
+             x:Class="Fluxograma_da_equipe1.MateriaPrimaPage"
              BackgroundColor="#fae9b9">
 
     <StackLayout Padding="30" VerticalOptions="CenterAndExpand">
 
         <!-- Título -->
-        <Label Text="Cadastro de Produto"
+        <Label Text="Matéria Prima"
                FontSize="Large"
                HorizontalOptions="Center"
                TextColor="Black"
                Margin="0,0,0,20"/>
 
-        <!-- Campo Id_Produto -->
+        <!-- Campo Produto -->
         <StackLayout Orientation="Horizontal">
-            <Label Text="Id_Produto:"
+            <Label Text="PRODUTO:"
                    VerticalOptions="Center"
                    TextColor="Black"/>
-            <Entry Placeholder="Id_Produto"
+            <Entry Placeholder="Produto"
                    HorizontalOptions="FillAndExpand"
                    BackgroundColor="White"/>
+        </StackLayout>
+
+        <!-- Campo Data de Entrada -->
+        <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+            <Label Text="Data de Entrada:"
+                   VerticalOptions="Center"
+                   TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="DD" WidthRequest="50" BackgroundColor="White"/>
+                <Entry Placeholder="MM" WidthRequest="50" BackgroundColor="White" Margin="10,0,10,0"/>
+                <Entry Placeholder="AAAA" WidthRequest="80" BackgroundColor="White"/>
+            </StackLayout>
         </StackLayout>
 
         <!-- Campo Quantidade -->
@@ -33,16 +45,29 @@
                    BackgroundColor="White"/>
         </StackLayout>
 
-        <!-- Campo Matéria Prima -->
+        <!-- Campo Data de Saída -->
         <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-            <Label Text="MATÉRIA PRIMA:"
+            <Label Text="DATA DE SAÍDA:"
                    VerticalOptions="Center"
                    TextColor="Black"/>
-            <Entry Placeholder="Matéria Prima"
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="DD" WidthRequest="50" BackgroundColor="White"/>
+                <Entry Placeholder="MM" WidthRequest="50" BackgroundColor="White" Margin="10,0,10,0"/>
+                <Entry Placeholder="AAAA" WidthRequest="80" BackgroundColor="White"/>
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Campo Unidade -->
+        <StackLayout Orientation="Horizontal" Margin="0,10,0,20">
+            <Label Text="UNIDADE:"
+                   VerticalOptions="Center"
+                   TextColor="Black"/>
+            <Entry Placeholder="Unidade"
                    HorizontalOptions="FillAndExpand"
                    BackgroundColor="White"/>
         </StackLayout>
-        <!-- Botões de Salvar e Apagar -->
+
+        <!-- Botões de Salvar e Voltar -->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20">
             <Button Text="SALVAR"
                     BackgroundColor="LightGreen"
@@ -50,11 +75,12 @@
                     Clicked="OnSaveClicked"
                     WidthRequest="100"
                     Margin="0,0,10,0"/>
-            <Button Text="APAGAR"
+            <Button Text="VOLTAR"
                     BackgroundColor="LightCoral"
                     TextColor="Black"
-                    Clicked="OnApagarClicked"
+                    Clicked="OnVoltarClicked"
                     WidthRequest="100"/>
         </StackLayout>
+
     </StackLayout>
 </ContentPage>
