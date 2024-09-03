@@ -1,0 +1,40 @@
+
+using Controles;
+using Microsoft.Maui.Controls;
+using System.Collections.ObjectModel;
+using System.Linq;
+using Modelos;
+using Fluxograma_da_equipe1;
+
+namespace diagrma
+{
+    public partial class ListaClientePage : ContentPage
+    {
+        ClienteControle clienteControle = new ClienteControle();
+        public ListaClientePage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ListViewClientes.ItemsSource = clienteControle.LerTodos();
+        }
+
+        void QuandoSelecionarUmItemNaLista(object sender, SelectedItemChangedEventArgs e)
+        {
+            var page = new CadastroClientePage();
+            page.cliente = e.SelectedItem as Cliente;
+            Application.Current.MainPage = page;
+        }
+        
+         private void BotaoVoltarId(object sender, EventArgs e)
+        {
+            if (Application.Current != null)
+                Application.Current.MainPage = new MainPage();
+        }   
+
+    }
+
+}

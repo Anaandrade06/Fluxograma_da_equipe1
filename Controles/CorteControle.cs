@@ -8,15 +8,15 @@ public class CorteControle : BaseControle
 
   public CorteControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "Coerte";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idCorte)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.Id == idCorte);
   }
 
   //----------------------------------------------------------------------------

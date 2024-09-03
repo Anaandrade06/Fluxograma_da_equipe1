@@ -2,21 +2,21 @@ using Modelos;
 
 namespace Controles;
 
-public class EstoqueControle : BaseControle
+public class CosturaControle : BaseControle
 {
   //----------------------------------------------------------------------------
 
-  public EstoqueControle() : base()
+  public CosturaControle() : base()
   {
-    NomeDaTabela = "Estoque";
+    NomeDaTabela = "Costura";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idEstoque)
+  public virtual Registro? Ler(int idCostura)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idEstoque);
+    return collection.FindOne(d => d.Id == idCostura);
   }
 
   //----------------------------------------------------------------------------

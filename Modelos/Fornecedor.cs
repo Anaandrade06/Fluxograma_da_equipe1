@@ -3,7 +3,9 @@ using LiteDB;
 namespace Modelos;
 public class Fornecedor : Registro
 {
-   [BsonId]
+    internal object nome;
+
+    [BsonId]
     public int Id { get; set;}
     
     private string CNPj { get; set;}

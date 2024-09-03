@@ -1,8 +1,8 @@
 namespace Modelos;
 public class Cliente: Pessoa
 {
-public int Idade { get; set;}
+public string Datadenascimento { get; set;}
 public int Id { get; set;}
-public string Sobrenome { get; set;}
-
+public string Cpf{ get; set;}
+public string telefone { get; set;}
 } 

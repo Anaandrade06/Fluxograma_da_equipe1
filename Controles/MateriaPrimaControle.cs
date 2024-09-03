@@ -8,15 +8,15 @@ public class MateriaPrimaControle : BaseControle
 
   public MateriaPrimaControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "MateriaPrima";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idMateriaPrima)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.Id == idMateriaPrima);
   }
 
   //----------------------------------------------------------------------------

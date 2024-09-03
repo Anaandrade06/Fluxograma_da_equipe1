@@ -6,7 +6,7 @@ namespace Modelos;
 public class Materia_Prima :Registro
 {
 public string Nome { get; set;}
-public int Quantidade {get; set;}
+public string Quantidade {get; set;}
 [BsonId]
 public int Id_MateriaPrima {get; set;}
 }

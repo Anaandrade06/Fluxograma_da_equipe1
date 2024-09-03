@@ -12,7 +12,7 @@ namespace Fluxograma_da_equipe1
         // Event handler for save button
         private void OnSaveClicked(object sender, EventArgs e)
         {
-             Application.Current.MainPage= new EstoquePage();
+             Application.Current.MainPage= new MainPage();
             // Implementar lógica de salvar
             DisplayAlert("Salvar", "Matéria Prima salva com sucesso", "OK");
         }

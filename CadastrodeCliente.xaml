@@ -2,80 +2,90 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fluxograma_da_equipe1.CadastroClientePage"
-             BackgroundColor="#fae9b9">
+             BackgroundColor="#fae9b9"
+             Shell.NavBarIsVisible="false">
 
-    <ScrollView>
-        <StackLayout Padding="20">
+       <ScrollView>
+              <StackLayout Padding="20">
 
-            <!-- Título -->
-            <Label Text="Cadastro de cliente"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   Margin="0,20,0,20"/>
+                     <!-- Título -->
+                     <Label Text="Cadastro de cliente"
+                            FontSize="Large"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"
+                            Margin="0,20,0,20"/>
+                     <Label x:Name="IdLabel"
+                            Text="0"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Start"
+                            Grid.Row="2"/>
 
-            <!-- Campo Nome -->
-            <Label Text="NOME (Obrigatório):"
-                   FontAttributes="Bold"/>
-         
-            <Entry Placeholder="Digite o nome" 
-                   HorizontalOptions="FillAndExpand"/>
+                     <!-- Campo Nome -->
+                     <Label Text="NOME (Obrigatório):"
+                            x:Name="NomeEntry"
+                            FontAttributes="Bold"/>
 
-            <!-- Campo Data de Nascimento -->
-            <Label Text="DATA DE NASCIMENTO (Obrigatório):"
-                   FontAttributes="Bold"
-                   Margin="0,20,0,0"/>
-           
-            <StackLayout Orientation="Horizontal">
-              
-                <Entry Placeholder="DD" 
-                       WidthRequest="60"/>
-               
-                <Entry Placeholder="MM" 
-                       WidthRequest="60"/>
-               
-                <Entry Placeholder="AAAA" 
-                       WidthRequest="80"/>
-            </StackLayout>
+                     <Entry Placeholder="Digite o nome"
+                            HorizontalOptions="FillAndExpand"/>
 
-            <!-- Campo Telefone -->
-            <Label Text="TELEFONE (Obrigatório):"
-                   FontAttributes="Bold"
-                   Margin="0,20,0,0"/>
-          
-            <Entry Placeholder="Digite o telefone" 
-                   HorizontalOptions="FillAndExpand"/>
+                     <!-- Campo Data de Nascimento -->
+                     <Label Text="DATA DE NASCIMENTO (Obrigatório):"
+                            x:Name="DatadenascimentoEntry"
+                            FontAttributes="Bold"
+                            Margin="0,20,0,0"/>
 
-            <!-- Campo CPF -->
-            <Label Text="CPF (Obrigatório):"
-                   FontAttributes="Bold"
-                   Margin="0,20,0,0"/>
-           
-            <Entry Placeholder="Digite o CPF" 
-                   HorizontalOptions="FillAndExpand"/>
+                     <StackLayout Orientation="Horizontal">
 
-            <!-- Botões SALVAR e APAGAR -->
-            <StackLayout Orientation="Horizontal" 
-                         HorizontalOptions="CenterAndExpand" 
-                         Margin="20,40,20,20">
-              
-                <Button Text="SALVAR" 
-                        BackgroundColor="DodgerBlue"
-                        Margin="10"
-                        Clicked="SalvarClicked"
-                      />
-              
-                <Button Text="EXCLUIR" 
-                        BackgroundColor="DodgerBlue"
-                        Margin="10"
-                        Clicked="ExcluirClicked"
-                       />
-            </StackLayout>
+                            <Entry Placeholder="DD"
+                                   WidthRequest="60"/>
 
-            <!-- Popups de confirmação -->
-            
-            </StackLayout>
+                            <Entry Placeholder="MM"
+                                   WidthRequest="60"/>
 
-    </ScrollView>
+                            <Entry Placeholder="AAAA"
+                                   WidthRequest="80"/>
+                     </StackLayout>
+
+                     <!-- Campo Telefone -->
+                     <Label Text="TELEFONE (Obrigatório):"
+                            x:Name="TelefoneEntry"
+                            FontAttributes="Bold"
+                            Margin="0,20,0,0"/>
+
+                     <Entry Placeholder="Digite o telefone"
+                            HorizontalOptions="FillAndExpand"/>
+
+                     <!-- Campo CPF -->
+                     <Label Text="CPF (Obrigatório):"
+                            FontAttributes="Bold"
+                            Margin="0,20,0,0"/>
+
+                     <Entry Placeholder="Digite o CPF"
+                            HorizontalOptions="FillAndExpand"/>
+
+                     <!-- Botões SALVAR e APAGAR -->
+                     <StackLayout Orientation="Horizontal"
+                                  HorizontalOptions="CenterAndExpand"
+                                  Margin="20,40,20,20">
+
+                            <Button Text="SALVAR"
+                                    BackgroundColor="DodgerBlue"
+                                    Margin="10"
+                                    Clicked="SalvarClicked"/>
+
+                            <Button Text="EXCLUIR"
+                                    BackgroundColor="DodgerBlue"
+                                    Margin="10"
+                                    Clicked="ExcluirClicked"/>
+                     </StackLayout>
+
+                     <!-- Popups de confirmação -->
+
+              </StackLayout>
+
+       </ScrollView>
 
 </ContentPage>

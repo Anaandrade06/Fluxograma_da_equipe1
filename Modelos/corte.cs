@@ -5,6 +5,6 @@ namespace Modelos;
 public class Cortador: Registro
 {
 public string material {get;set;}
-public int Quantidade {get; set;} 
+public string Quantidade {get; set;} 
 
 }

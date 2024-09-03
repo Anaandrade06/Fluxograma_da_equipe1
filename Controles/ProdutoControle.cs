@@ -8,15 +8,15 @@ public class ProdutoControle : BaseControle
 
   public ProdutoControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "Produto";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idProduto)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.Id == idProduto);
   }
 
   //----------------------------------------------------------------------------

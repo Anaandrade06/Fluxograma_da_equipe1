@@ -8,15 +8,15 @@ public class ForneceMateriaPrimadorControle : BaseControle
 
   public ForneceMateriaPrimadorControle() : base()
   {
-    NomeDaTabela = "Clientes";
+    NomeDaTabela = "FornecedorMateriaPrima";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idCliente)
+  public virtual Registro? Ler(int idFornecedorMateriaPrima)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.Id == idFornecedorMateriaPrima);
   }
 
   //----------------------------------------------------------------------------
