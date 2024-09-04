@@ -19,13 +19,7 @@ public class EstoqueControle : BaseControle
     return collection.FindOne(d => d.Id == idEstoque);
   }
 
-  //----------------------------------------------------------------------------
-
-  public virtual List<Cliente>? LerTodos()
-  {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
-  }
+  //---------------------------------------------------------------------------
 
   //----------------------------------------------------------------------------
 

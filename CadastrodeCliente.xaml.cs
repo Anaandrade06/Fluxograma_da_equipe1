@@ -1,5 +1,5 @@
 
-using diagrma;
+using LiteDBExample;
 using Microsoft.Maui.Controls;
 using Modelos;
 
@@ -33,6 +33,7 @@ namespace Fluxograma_da_equipe1
             NomeEntry.Text      = cliente.Nome;
             DatadenascimentoEntry.Text = cliente.Datadenascimento;
             TelefoneEntry.Text  = cliente.telefone;
+            CpfEntry.Text  = cliente.Cpf;
             }
         }
 
@@ -48,7 +49,7 @@ namespace Fluxograma_da_equipe1
             // Apaga do Banco de Dados
             clienteControle.Apagar(cliente.Id);
 
-            Application.Current.MainPage = new ListaClientePage(); 
+            Application.Current.MainPage = new ListaClientesPage(); 
             }
         }
 
@@ -75,7 +76,7 @@ namespace Fluxograma_da_equipe1
 
             await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
             }
-            Application.Current.MainPage= new ListaClientePage();
+            Application.Current.MainPage= new ListaClientesPage();
         }
 
         private async Task<bool> VerificaSeDadosEstaoCorretos()
@@ -91,7 +92,7 @@ namespace Fluxograma_da_equipe1
             {
 
                 await DisplayAlert("Sucesso", "Dados salvos com sucesso!", "OK");  
-                Application.Current.MainPage= new ListaClientePage();
+                Application.Current.MainPage= new ListaClientesPage();
       
             }
         }
@@ -103,7 +104,7 @@ namespace Fluxograma_da_equipe1
             {
                 // Lógica para excluir os dados
                 await DisplayAlert("Sucesso", "Dados excluídos com sucesso!", "OK");
-                Application.Current.MainPage= new ClientePage();
+                Application.Current.MainPage= new MainPage();
             }
             }
         

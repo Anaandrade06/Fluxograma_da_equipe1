@@ -60,6 +60,7 @@
 
                      <!-- Campo CPF -->
                      <Label Text="CPF (Obrigatório):"
+                            x:Name="CpfEntry"
                             FontAttributes="Bold"
                             Margin="0,20,0,0"/>
 

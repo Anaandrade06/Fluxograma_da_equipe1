@@ -54,6 +54,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Fluxograma_da_equipe1.Clie
 build_metadata.AdditionalFiles.TargetPath = Cliente.xaml
 build_metadata.AdditionalFiles.RelativePath = Cliente.xaml
 
+[C:/Users/Aluno/Desktop/Fluxograma_da_equipe1/Corte.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fluxograma_da_equipe1.Corte.xaml
+build_metadata.AdditionalFiles.TargetPath = Corte.xaml
+build_metadata.AdditionalFiles.RelativePath = Corte.xaml
+
 [C:/Users/Aluno/Desktop/Fluxograma_da_equipe1/Estoque.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fluxograma_da_equipe1.Estoque.xaml

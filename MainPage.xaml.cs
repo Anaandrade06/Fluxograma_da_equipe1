@@ -12,7 +12,7 @@ namespace Fluxograma_da_equipe1
         // Event handlers for each button
         private async void OnClienteClicked(object sender, EventArgs e)
         {
-			Application.Current.MainPage= new ClientePage();
+			Application.Current.MainPage= new CadastroClientePage();
             // Navegação ou ação ao clicar em "Cliente"
             await DisplayAlert("Cliente", "Você clicou em Cliente", "OK");
             // Navegar para a página de Cliente, se necessário

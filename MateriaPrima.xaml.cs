@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using YourNamespace;
 
 namespace Fluxograma_da_equipe1
 {
@@ -12,7 +13,7 @@ namespace Fluxograma_da_equipe1
         // Event handler for save button
         private void OnSaveClicked(object sender, EventArgs e)
         {
-             Application.Current.MainPage= new MainPage();
+             Application.Current.MainPage= new CortePage();
             // Implementar lógica de salvar
             DisplayAlert("Salvar", "Matéria Prima salva com sucesso", "OK");
         }

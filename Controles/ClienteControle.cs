@@ -20,13 +20,6 @@ public class ClienteControle : BaseControle
   }
 
   //----------------------------------------------------------------------------
-
-  public virtual List<Cliente>? LerTodos()
-  {
-    var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
-  }
-
   //----------------------------------------------------------------------------
 
   public virtual void Apagar(int idCliente)
